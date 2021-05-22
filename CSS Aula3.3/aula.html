@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 3.2</title>
+</head>
+
+<body>
+    <div>Div</div>
+    <p>Parágrafo</p>
+    Texto solto induz a criação de um inline box implícito
+    <span>span 1</span>
+    <span>span 2</span>
+    <span>span 3</span>
+    <span>span 4</span>
+    <a href="a">link 1</a>
+
+    <div class="destaque">
+        Bloc box respseita width, height, border,
+        padding e margin
+    </div>
+    bla bla bla bla bla bla bla bla bla
+    <div class="destaque" style="box-sizing: border-box">
+
+        Com <code>box-sizig: border-box</code> width e height consideram borda
+        e padding.
+    </div>
+
+    <div class="destaque">
+        Margens verticais adjacentes se sobrepoe (margin collapse).
+    </div>
+
+    bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+    bla bla bla <span class="destaque"> inline box ignora tamanho</span> bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+
+</body>
+
+</html>
