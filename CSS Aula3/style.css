@@ -12,3 +12,18 @@ ul.listaBonita li {
 ul.listaBonita {
     color: #353535;
 }
+
+ul.listaBonita > li:first-child {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+ul.listaBonita > li:last-child {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+ul.listaBonita > li.selecionado {
+    background-color: #bfdbff;
+    border: solid #2e79db;
+}
