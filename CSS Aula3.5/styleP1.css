@@ -1,0 +1,18 @@
+html {
+    font-family: Arial;
+}
+
+.fb {
+    background-color: greenyellow;
+    display: flex;
+    width: 300px;
+    height: 120px;
+}
+
+.fb > div {
+    background-color: lightcoral;
+    border: 2px solid lightseagreen;
+    margin: 6px;
+    padding: 0 6px;
+    text-align: center;
+}
