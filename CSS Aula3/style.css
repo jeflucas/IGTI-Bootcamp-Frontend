@@ -23,7 +23,12 @@ ul.listaBonita > li:last-child {
     border-bottom-right-radius: 3px;
 }
 
+ul.listaBonita > li:hover {
+    background-color: #ebebeb;
+}
+
 ul.listaBonita > li.selecionado {
     background-color: #bfdbff;
-    border: solid #2e79db;
+    border-color: #2e79db;
 }
+
