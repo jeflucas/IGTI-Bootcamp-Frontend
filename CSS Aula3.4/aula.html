@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 3.4</title>
+</head>
+
+<style>
+    div {
+        background-color: aquamarine;
+        padding: 8px;
+        border: 4px solid yellow;
+        margin: 8px;
+    }
+</style>
+
+<body>
+
+    <div>XPTO</div>
+
+    <div style="position:relative; top: 30px; left: 20px;">
+        <code>position:relative; top: 30px; left: 20px;</code>
+    </div>
+
+    <div>XPTO</div>
+
+    <div><strong>XPTO</strong></div>
+    <div style="position: absolute; top: 30px; right: 20px;">
+        <code>position: absolute; top: 30px; right: 20px;</code>
+        <div>
+            Este é o DIV 3
+            <div style="position: absolute; top: 120px; left: -60px;">
+                Este é o filho do DIV 3 com <br />
+                <code>position: absolute; top: 120px; left: -60px</code>
+            </div>
+        </div>
+    </div>
+    <div>XPTO</div>
+</body>
+
+</html>
