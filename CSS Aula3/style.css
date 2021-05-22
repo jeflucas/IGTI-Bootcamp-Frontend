@@ -38,10 +38,6 @@ ul.listaBonita > li.selecionado {
     border-bottom-style: solid;
 }
 
-ul.listaBonita > li:not(.selecionado) + li.selecionado {
-    border-top-style: solid;
-}
-
-ul.listaBonita > li:not(.selecionado) + li:not(.selecionado) {
+ul.listaBonita > li:not(.selecionado) + li {
     border-top-style: solid;
 }
