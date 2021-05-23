@@ -9,5 +9,9 @@ palindromo('x') // true
 
 
 function palindromo(s) {
-    
+    if (s.length <= 1) {
+        console.log(`${s} é Palíndromo`)
+    } else {
+        console.log(`${s} não implementado`)
+    }
 }
