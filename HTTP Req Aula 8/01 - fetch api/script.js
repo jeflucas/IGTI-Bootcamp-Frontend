@@ -23,14 +23,14 @@ function fetchJson(url) {
 }
 
 function solution2() {
-	fetchJson("http://localhost:3000/employees")
-		.then((employees) => {
-			fetchJson("http://localhost:3000/roles")
-				.then(roles => {
-					let table = renderTable(employees, roles);
-					document.getElementById("app").innerHTML = table
-				})
+	fetchJson("http://localhost:3000/employees").then((employees) => {
+		fetchJson("http://localhost:3000/roles").then(roles => {
+			let table = renderTable(employees, roles);
+			document.getElementById("app").innerHTML = table
 		})
+			.catch(showError)
+	})
+		.catch(showError)
 }
 
 //solution2()
@@ -42,27 +42,36 @@ function solution3() {
 	]).then(([employees, roles]) => {
 		let table = renderTable(employees, roles);
 		document.getElementById("app").innerHTML = table
-	})
+	}, showError)
 }
 
 //solution3()
 
 async function solution4() {
-	let employees = await fetchJson("http://localhost:3000/employees")
-	let roles = await fetchJson("http://localhost:3000/roles")
-	let table = renderTable(employees, roles);
-	document.getElementById("app").innerHTML = table
+	try {
+		let employees = await fetchJson("http://localhost:3000/employees")
+		let roles = await fetchJson("http://localhost:3000/roles")
+		let table = renderTable(employees, roles);
+		document.getElementById("app").innerHTML = table
+	} catch (erro) {
+		showError(erro)
+	}
 }
 
 //solution4()
 
 async function solution5() {
+
+	try {
 	let [employees, roles] = await Promise.all([
 		fetchJson("http://localhost:3000/employees"),
 		fetchJson("http://localhost:3000/roles")
 	])
-		let table = renderTable(employees, roles);
-		document.getElementById("app").innerHTML = table
+	let table = renderTable(employees, roles);
+	document.getElementById("app").innerHTML = table
+} catch(erro) {
+	showError(erro)
+} 
 }
 
 solution5()
@@ -74,3 +83,8 @@ function renderTable(employees, roles) {
 	})
 	return `<table> ${rows.join("")} </table>`
 }
+
+function showError(employees, roles) {
+	document.getElementById("app").innerHTML = "Erro ao carregar dados";
+}
+
