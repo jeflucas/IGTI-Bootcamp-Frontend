@@ -1,0 +1,26 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#diagrama {
+    position: relative;
+    border: 2px dashed lightcoral;
+    height: 400px;
+    overflow: hidden;
+}
+
+#caixa {
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    border: 2px solid lightseagreen;
+    background-color: burlywood;
+    padding: 4px;
+    cursor: grab;
+    user-select: none;
+}
+
+#caixa.arrastando {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    cursor: grabbing;
+}
