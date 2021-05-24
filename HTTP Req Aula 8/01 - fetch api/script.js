@@ -33,7 +33,19 @@ function solution2() {
 		})
 }
 
-solution2()
+//solution2()
+
+function solution3() {
+	Promise.all([
+		fetchJson("http://localhost:3000/employees"),
+		fetchJson("http://localhost:3000/roles")
+	]).then(([employees, roles]) => {
+		let table = renderTable(employees, roles);
+		document.getElementById("app").innerHTML = table
+	})
+}
+
+solution3()
 
 function renderTable(employees, roles) {
 	let rows = employees.map((employee) => {
