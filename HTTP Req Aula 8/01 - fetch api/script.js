@@ -74,7 +74,7 @@ async function solution5() {
 } 
 }
 
-solution5()
+//solution5()
 
 function renderTable(employees, roles) {
 	let rows = employees.map((employee) => {
