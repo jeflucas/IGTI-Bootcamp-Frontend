@@ -9,11 +9,11 @@ function setPos(x, y) {
 caixa.addEventListener("mousedown", iniciaArraste)
 
 function iniciaArraste(event) {
-    caixa.className = "arrastando"
+    caixa.classList.add("arrastando")
 }
 
 document.addEventListener("mouseup", terminaArraste)
 
 function terminaArraste (event) {
-    caixa.className = ""
+    caixa.classList.remove("arrastando")
 }
