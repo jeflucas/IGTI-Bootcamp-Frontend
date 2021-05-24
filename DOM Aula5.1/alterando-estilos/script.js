@@ -7,12 +7,14 @@ function setPos(x, y) {
 }
 
 caixa.addEventListener("mousedown", iniciaArraste)
+document.addEventListener("mouseup", terminaArraste)
 
 function iniciaArraste(event) {
     caixa.classList.add("arrastando")
+    document.addEventListener("mousemove", arrasta)
 }
 
-document.addEventListener("mouseup", terminaArraste)
+
 
 function terminaArraste (event) {
     caixa.classList.remove("arrastando")
