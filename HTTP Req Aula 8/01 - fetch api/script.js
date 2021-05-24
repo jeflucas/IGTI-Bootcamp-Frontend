@@ -45,7 +45,27 @@ function solution3() {
 	})
 }
 
-solution3()
+//solution3()
+
+async function solution4() {
+	let employees = await fetchJson("http://localhost:3000/employees")
+	let roles = await fetchJson("http://localhost:3000/roles")
+	let table = renderTable(employees, roles);
+	document.getElementById("app").innerHTML = table
+}
+
+//solution4()
+
+async function solution5() {
+	let [employees, roles] = await Promise.all([
+		fetchJson("http://localhost:3000/employees"),
+		fetchJson("http://localhost:3000/roles")
+	])
+		let table = renderTable(employees, roles);
+		document.getElementById("app").innerHTML = table
+}
+
+solution5()
 
 function renderTable(employees, roles) {
 	let rows = employees.map((employee) => {
