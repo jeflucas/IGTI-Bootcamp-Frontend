@@ -1,3 +1,16 @@
 * {
-    background-color: ghostwhite;
-font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+.image {
+    width: 300px;
+}
+
+.sNetwork-logo {
+    width: 30px;
+}
