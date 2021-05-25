@@ -11,16 +11,35 @@
     width: 300px;
 }
 
+.principal {
+    display:flexbox;
+}
+
 .sNetwork-logo {
     width: 30px;
 }
 
-nav {
+.navbar {
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    background-color: lightsalmon;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  
+  list-style: none;
+  margin: 0; 
+  background: lightcoral;
 }
+
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: white;
+  }
+
+  .navbar a:hover {
+    background: #c03715;
+  }
+  
 .principal-block {
     display: flex;
     flex-flow: wrap;
