@@ -11,21 +11,21 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#titulo-principal">Início</a>
-            <a href="#origem">A origem do bolo</a>
-            <a href="#principal">Receita do bolo</a>
-            <a href="#footer">Comentários</a>
+        <nav class="navbar">
+            <a class="navbar-button" href="#titulo-principal">Início</a>
+            <a class="navbar-button" href="#origem">A origem do bolo</a>
+            <a class="navbar-button" href="#principal">Receita do bolo</a>
+            <a class="navbar-button" href="#footer">Comentários</a>
         </nav>
     </header>
-    <main>
+    <main class="principal">
         <section>
-            <h2>Conheça o bolo</h2>
-            <img src="" alt="boloDeFruta"> <!-- TODO Colocar foto-->
+            <h2 class="principal-title">Conheça o bolo</h2>
+            <img class="image" src="" alt="boloDeFruta"> <!-- TODO Colocar foto-->
         </section>
-        <article>
-            <h2>A origem do bolo</h2>
-            <p>
+        <article class="principal-article">
+            <h2 class="principal-title">A origem do bolo</h2>
+            <p class="principal-text">
                 Acredita-se que a origem dos bolos tenha 
                 sido no Egito Antigo na forma de pães adoçados com xarope de 
                 frutas, tâmaras e passas. Os gregos e romanos o 
@@ -37,17 +37,17 @@
             </p>
         </article>
 
-        <blockquote>
-            <cite>
+        <blockquote class="principal-quote">
+            <cite class="principal-quote-quotation">
                 "Criar uma empresa é como fazer um bolo. Você precisa ter todos os ingredientes na proporção certa."
             </cite>
             <p> - <a href="https://tinyurl.com/CakElonMusk" target="_blank">Elon Musk</a></p>
         </blockquote>
-        <section>
-            <h2>Receita de Bolo de Chocolate</h2>
-            <img src="" alt="boloChocolate"> <!--TODO colocar foto-->
-            <h3>Ingredientes</h3>
-            <ul>
+        <section class="principal-recepie">
+            <h2 class="principal-title">Receita de Bolo de Chocolate</h2>
+            <img class="image" src="" alt="boloChocolate"> <!--TODO colocar foto-->
+            <h3 class="principal-subtitle">Ingredientes</h3>
+            <ul class="principal-recepie-ingridients">
                 <li>4 ovos</li>
                 <li>4 colheres (sopa) de chocolate em pó</li>
                 <li>2 colheres (sopa) de manteiga</li>
@@ -55,14 +55,14 @@
                 <li>2 colheres (sopa) de fermento</li>
                 <li>1 xícara (chá) de leite</li>
             </ul>
-            <h3>Modo de Preparo</h3>
-            <p> 1. Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos. <br>
+            <h3 class="principal-subtitle">Modo de Preparo</h3>
+            <p class="principal-text"> 1. Em um liquidificador adicione os ovos, o chocolate em pó, a manteiga, a farinha de trigo, o açúcar e o leite, depois bata por 5 minutos. <br>
                 2. Adicione o fermento e misture com uma espátula delicadamente. <br>
                 3. Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos.</p>
         
-                <aside>
-                    <h2>Bolos Relacionados</h2>
-                    <ul>
+                <aside class="principal-sidebar">
+                    <h2 class="principal-title">Bolos Relacionados</h2>
+                    <ul class="principal-sidebar-itens">
                         <li>Bolo de Coco</li>
                         <li>Bolo de Morango</li>
                         <li>Bolo de Milho</li>
@@ -74,27 +74,27 @@
                 </aside>
             </section>
 
-    <section>
-        <h2>Entre em Contato!</h2>
-        <table>
-            <label>Nome: </label><input type="text"><br>
-            <label>Sobrenome: </label><input type="text"><br>
-            <label>Telefone: </label><input type="number"><br>
-            <label>Email: </label><input type="text"><br>
-            <label>Mensagem: </label><input type="text"><br>
-            <button>Enviar</button>
-            <button>Não enviar</button>
+    <section class="principal-contact">
+        <h2 class="principal-title">Contato:</h2>
+        <table class="principal-contact-table">
+            <label class="principal-contact-table-item">Primeiro Nome: </label><input type="text"><br>
+            <label class="principal-contact-table-item">Sobrenome: </label><input type="text"><br>
+            <label class="principal-contact-table-item">Telefone: </label><input type="number"><br>
+            <label class="principal-contact-table-item">Email: </label><input type="text"><br>
+            <label class="principal-contact-table-item">Mensagem: </label><input type="text"><br>
+            <button class="principal-contact-table-sendButton">Enviar</button>
+            <button class="principal-contact-table-cancelButton">Cancelar</button>
         </table>
     </section>
     </main>
     <footer>
-        <div id="social-network">
-            <a href="www.instagram.com?"><img src="src/img/instagram.png" class="social-icon"/></a>
-            <a href="www.facebook.com?"><img src="src/img/facebook.png" class="social-icon"/></a>
-            <a href="www.twitter.com?"><img src="src/img/twitter.png" class="social-icon"/></a> 
-            <a href="www.wordpress.com?"><img src="src/img/wordpress.png" class="social-icon"/></a>
+        <div class="sNetwork">
+            <a class="sNetwork-logo" href="www.instagram.com?"><img src="src/img/instagram.png" class="social-icon"/></a>
+            <a class="sNetwork-logo" href="www.facebook.com?"><img src="src/img/facebook.png" class="social-icon"/></a>
+            <a class="sNetwork-logo" href="www.twitter.com?"><img src="src/img/twitter.png" class="social-icon"/></a> 
+            <a class="sNetwork-logo" href="www.wordpress.com?"><img src="src/img/wordpress.png" class="social-icon"/></a>
         </div>
-        <p id="direitos">Bolo 2021 @ Todos os direitos reservados</p>
+        <p class="copyright">Bolo 2021 @ Todos os direitos reservados</p>
     </footer>
 </body>
 
