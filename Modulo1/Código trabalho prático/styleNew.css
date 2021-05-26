@@ -1,18 +1,17 @@
-* {
-    padding:0;
-    margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
 
+.container {
+   min-height: 20px;
+   margin: 20px; 
+}
 .image {
     width: 300px;
 }
 
-.principal {
-    display:flexbox;
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .sNetwork-logo {
@@ -40,9 +39,43 @@
     background: #c03715;
   }
   
-.principal-block {
+  .principal-title {
+      background-color: aqua;
+  }
+
+  .principal-block {
+      background-color: lightgreen;
+  }
+
+  .principal-article {
+      background-color: chartreuse;
+  }
+
+  .principal-text {
+      background-color: blueviolet;
+  }
+
+.principal-recepie {
+    background-color: cadetblue;
+}
+
+.principal-subtitle {
+    background-color: darkgoldenrod;
+}
+
+.principal-sidebar {
+    background-color: darkcyan;
+}
+
+.principal-sidebar-itens {
+    background-color: darkgrey;
+}
+
+.sNetwork {
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    align-items: center;
+    flex-flow: row wrap;
+  justify-content:space-around;
+  
+  list-style: none;
+  margin: 0; 
 }
