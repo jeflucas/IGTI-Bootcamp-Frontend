@@ -2,12 +2,12 @@
     color: black;
 }
 
-.img-dimention {
+.img-dimension {
     transform: scale(1.5);
     width: 100%;
 }
 
-.topbar-profile-photo{
+.topbar-profile-photo, .like-profile-photo {
     width: 1.5em;
     height: 1.5em;
     position: relative;
@@ -27,4 +27,8 @@
     width: 46px;
     height: 46px;
     position: relative;
+}
+
+.icon-link-post {
+    color: black;
 }
