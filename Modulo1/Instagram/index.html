@@ -58,7 +58,7 @@
             <a href="#" class="link-meu">
               <div
                 class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3  topbar-profile-photo">
-                <img src="./img/profile/profile-1.png" alt="Profile Picture">
+                <img class="img-dimention" src="./img/profile/profile-1.png" alt="Profile Picture">
               </div>
             </a>
           </div>
@@ -68,30 +68,44 @@
 
   </header>
   <main>
-    <div class="container justify-content-center">
+    <div class="container d-flex justify-content-center mt-4">
       <div class="col-9">
         <row>
           <section class="col-8">
+            <!-- STORIES -->
             <div class="card">
               <div class="card-body d-flex justify-content-start">
-                <div>
+                <div class="d-flex flex-column justify-content-center me-3">
                   <a href="#">
                     <div
-                      class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3  stories-profile-photo">
-                      <img src="./img/profile/profile-2.png" alt="Story Profile Picture">
+                      class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger me-3  stories-profile-photo">
+                      <img class="img-dimention" src="./img/profile/profile-2.png" alt="Story Profile Picture">
                     </div>
                   </a>
-                  <p><small>Fulano</small></p>
+                  <p class="stories-username">Fulano</p>
                 </div>
                 <div>
                   <a href="#">
-                    <div
-                      class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border me-3  stories-profile-photo">
-                      <img src="./img/profile/profile-3.png" alt="Story Profile Picture">
+                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger me-3  stories-profile-photo">
+                      <img class="img-dimention" src="./img/profile/profile-3.png" alt="Story Profile Picture">
                     </div>
                   </a>
-                  <p> <small>Juventude</small></p>
+                  <p class="stories-username">Juventude</p>
                 </div>
+              </div>
+            </div>
+            <!-- POST -->
+            <div class="d-flex flex-column my-4">
+              <div class="card">
+                <div class="card-header bg-white">
+                  <div class="d-flex flex-row align-items-center">
+                    <div class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border border-2 border-danger me-3  post-profile-photo">
+                      <img class="img-dimention" src="./img/profile/profile-3.png" alt="Story Profile Picture">
+                    </div>
+                  </div>
+                  <p class="post-username">Juventude</p>
+                </div>
+                <div class="card-body"></div>
               </div>
             </div>
           </section>

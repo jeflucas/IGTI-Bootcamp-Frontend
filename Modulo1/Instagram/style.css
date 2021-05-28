@@ -2,6 +2,11 @@
     color: black;
 }
 
+.img-dimention {
+    transform: scale(1.5);
+    width: 100%;
+}
+
 .topbar-profile-photo{
     width: 1.5em;
     height: 1.5em;
@@ -12,5 +17,14 @@
     width: 56px;
     height: 56px;
     position: relative;
-    
+}
+
+.stories-username {
+    font-size: small;
+}
+
+.post-profile-photo {
+    width: 46px;
+    height: 46px;
+    position: relative;
 }
