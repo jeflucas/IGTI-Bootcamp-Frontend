@@ -2,7 +2,7 @@
   height: 60%;
 }
 
-.btn {
+button {
   background-color: crimson;
 }
 
@@ -13,6 +13,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.card-image-top {
+  width: 140px;
+  height: 140px;
 }
 
 /*# sourceMappingURL=style.css.map */
