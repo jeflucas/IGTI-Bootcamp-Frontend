@@ -18,9 +18,9 @@
       <div class="container-fluid">
         <div class="d-flex justify-content-center">
           <a class="navbar-brand" href="#">
-          <img src="./img/logo.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">
-        </a>
-        <a class="d-inline-flex p-2 align-items-center text-decoration-none" aria-current="page" href="#">Home</a>
+            <img src="./img/logo.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">
+          </a>
+          <a class="d-inline-flex p-2 align-items-center text-decoration-none" aria-current="page" href="#">Home</a>
         </div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="" aria-label="Pesquisar">
@@ -31,140 +31,187 @@
   </header>
   <main>
 
-<!--CARROSEL-->
-<div class="container-fluid p-0">
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./img/homem-fazendo-flexao.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+    <!--CARROSEL-->
+    <div class="">
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/homem-fazendo-flexao.jpg" class="d-block w-100" alt="...">
+            <rect width="100%" height="70%" fill="#777"></rect>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/academia.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/mulher-fazendo-ioga.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="./img/academia.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="./img/mulher-fazendo-ioga.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-</div>
 
-<!--Círculos-->
-<div class="px-3 p-5">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-100 border-0">
-        <img src="./img/treinamento-funcional.jpg" class="card-img-top rounded-circle" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">Treinamento Funcional</h5>
-          <p class="card-text text-center">O treinamento funcional baseia-se no movimento natural do ser humano como correr, pular e empurrar.</p>
-          <a href="#" class="text-center">Saiba Mais >></a>
+    <!--Círculos-->
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col">
+          <div class="card border-0">
+            <img src="./img/treinamento-funcional.jpg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Treinamento Funcional</h5>
+              <p class="card-text text-center">O treinamento funcional baseia-se no movimento natural do ser humano como
+                correr, pular e empurrar.</p>
+              <a href="#" class="text-center">Saiba Mais >></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="./img/treinador.jpg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Treinamento Físico</h5>
+              <p class="card-text text-center">Treinamento de cada grupo muscular trabalhando duas vezes na semama
+                usando aparelhos da academia..</p>
+              <a href="#" class="text-center">Saiba Mais >></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 border-0">
+            <img src="./img/posicao-ioga.jpg" class="card-img-top rounded-circle" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-center">Ioga</h5>
+              <p class="card-text text-center">É um conceito que se refere às tradicionais disciplinas físicas e mentais
+                originárias da Índia.</p>
+              <a href="#" class="text-center">Saiba Mais >></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100 border-0">
-        <img src="./img/treinador.jpg" class="card-img-top rounded-circle" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">Treinamento Físico</h5>
-          <p class="card-text text-center">Treinamento de cada grupo muscular trabalhando duas vezes na semama usando aparelhos da academia..</p>
-          <a href="#" class="text-center">Saiba Mais >></a>
+
+    <!--CITAÇÂO-->
+      <div class="bg-image">
+        <img src="./img/trilha.jpg" class="w-100" alt="" />
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <h3 class="text-white mb-0">"Uma hora antes da academia: cansaço e vontade de ficar em casa. Huma hora depois da academia: aquele
+              sentimento maravilhoso de dever cumprido."</h3>
+          </div>
+        </div>
+      </div>
+
+    <!--PLANOS-->
+    <div class="container">
+      <h3>Conheça nossos Planos</h3>
+      <div class="d-flex justify-content-around">
+        <div class="card">
+          <div class="card-header">
+            <p>Básico</p>
+          </div>
+          <div class="card-body">
+            <p>RS 50/mês</p>
+            <p>Treino 2 dias da semana</p>
+            <p>Acompnhamento de personal trainer</p>
+            <p>Aulas de spinning inclusas</p>
+            <p>Teste físico gratuito</p>
+            <button class="btn btn-primary" type="button">Contrate esse plano</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <p>Pró</p>
+          </div>
+          <div class="card-body">
+            <p>RS 80/mês</p>
+            <p>Treino 4 dias da semana</p>
+            <p>Acompnhamento de personal trainer e nutricionista</p>
+            <p>Aulas de spinning e ioga inclusas</p>
+            <p>Teste físico gratuito</p>
+            <button class="btn btn-primary" type="button">Contrate esse plano</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <p>Enterprise</p>
+          </div>
+          <div class="card-body">
+            <p>RS 130/mês</p>
+            <p>Treino 7 dias da semana</p>
+            <p>Acompnhamento de personal trainer, nutricionista e psicóloga</p>
+            <p>Aulas de spinning, ioga e zumba inclusas</p>
+            <p>Treinamento funcional e cross-fit</p>
+            <p>Teste físico gratuito</p>
+            <button class="btn btn-primary" type="button">Contrate esse plano</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100 border-0">
-        <img src="./img/posicao-ioga.jpg" class="card-img-top rounded-circle" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-center">Ioga</h5>
-          <p class="card-text text-center">É um conceito que se refere às tradicionais disciplinas físicas e mentais originárias da Índia.</p>
-          <a href="#" class="text-center">Saiba Mais >></a>
-        </div>
+
+    <!--CITAÇÂO-->
+    <div class="container-fluid p-0">
+      <img class="w-100" src="./img/treino-praia.jpg" alt="">
+      <p>"Energia! Lembre-se dos seus objetivos e não desista: o esforço de hoje será recompensado."</p>
+    </div>
+
+    <!--FORM-->
+    <div class="container">
+      <h3>Quer saber mais? Entre em contato!</h3>
+      <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome Sobrenome">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="meuemail@exemplo.com">
+        <p>Não copartilhamos seu e-mail com ninguém.</p>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+          <p>Eu aceito receber notícias por e-mail com promoções</p>
+        </label>
       </div>
     </div>
-  </div>
-</div>
-
-<!--CITAÇÂO-->
-<div class="container-fluid p-0">
-  <img class="w-100" src="./img/trilha.jpg" alt="">
-  <p>"Uma hora antes da academia: cansaço e vontade de ficar em casa. Huma hora depois da academia: aquele sentimento maravilhoso de dever cumprido."</p>
-</div>
-
-<!--PLANOS-->
-<div>
-  <h3>Conheça nossos Planos</h3>
-<div class="d-flex justify-content-around">
-  <div class="card">
-    <div class="card-header">
-      <p>Básico</p>
-    </div>
-    <div class="card-body">
-      <p>RS 50/mês</p>
-      <p>Treino 2 dias da semana</p>
-      <p>Acompnhamento de personal trainer</p>
-      <p>Aulas de spinning inclusas</p>
-      <p>Teste físico gratuito</p>
-      <button class="btn btn-primary" type="button">Contrate esse plano</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header">
-      <p>Pró</p>
-    </div>
-    <div class="card-body">
-      <p>RS 80/mês</p>
-      <p>Treino 4 dias da semana</p>
-      <p>Acompnhamento de personal trainer e nutricionista</p>
-      <p>Aulas de spinning e ioga inclusas</p>
-      <p>Teste físico gratuito</p>
-      <button class="btn btn-primary" type="button">Contrate esse plano</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header">
-      <p>Enterprise</p>
-    </div>
-    <div class="card-body">
-      <p>RS 130/mês</p>
-      <p>Treino 7 dias da semana</p>
-      <p>Acompnhamento de personal trainer, nutricionista e psicóloga</p>
-      <p>Aulas de spinning, ioga e zumba inclusas</p>
-      <p>Treinamento funcional e cross-fit</p>
-      <p>Teste físico gratuito</p>
-      <button class="btn btn-primary" type="button">Contrate esse plano</button>
-    </div>
-  </div>
-</div>
-</div>
-
   </main>
   <footer>
-
+    <div>
+      <p>Fitness © - Todos os direitos reservados</p>
+      <a href="">Voltar ao Início</a>
+    </div>
   </footer>
 
 
