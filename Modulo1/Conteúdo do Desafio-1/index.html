@@ -22,7 +22,8 @@
           <a class="navbar-brand" href="#">
             <img src="./img/logo.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">
           </a>
-          <a class="d-inline-flex p-2 align-items-center text-decoration-none" aria-current="page" href="#">Home</a>
+          <a class="d-inline-flex p-2 align-items-center text-decoration-none text-light" aria-current="page"
+            href="#" id="top">Home</a>
         </div>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="" aria-label="Pesquisar">
@@ -56,7 +57,7 @@
           </div>
         </div>
 
-          <!--Slide2-->
+        <!--Slide2-->
         <div class="carousel-item">
           <div class="bg-slide2"></div>
           <div class="container">
@@ -93,37 +94,43 @@
 
     <!--Círculos-->
     <div class="container">
-      <div class="row justify-content-around">
+      <div class="row justify-content-around pt-5">
         <div class="col">
-          <div class="card border-0">
-            <img src="./img/treinamento-funcional.jpg" class="card-img-top rounded-circle"  alt="...">
+          <div class="card border-0 align-items-center">
+            <img src="./img/treinamento-funcional.jpg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
-              <h5 class="card-title text-center">Treinamento Funcional</h5>
+              <h4 class="card-title text-center">Treinamento Funcional</h4>
               <p class="card-text text-center">O treinamento funcional baseia-se no movimento natural do ser humano como
                 correr, pular e empurrar.</p>
-              <a href="#" class="text-center">Saiba Mais &raquo;</a>
+              <a href="#" class="fs-6 text-decoration-none text-dark">
+                <p class="text-center fw-bold">Saiba Mais &raquo;</p>
+              </a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0 align-items-center">
             <img src="./img/treinador.jpg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
-              <h5 class="card-title text-center">Treinamento Físico</h5>
+              <h4 class="card-title text-center">Treinamento Físico</h4>
               <p class="card-text text-center">Treinamento de cada grupo muscular trabalhando duas vezes na semama
                 usando aparelhos da academia..</p>
-              <a href="#" class="text-center">Saiba Mais &raquo;</a>
+              <a href="#" class="fs-6 text-decoration-none text-dark">
+                <p class="text-center fw-bold">Saiba Mais &raquo;</p>
+              </a>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100 border-0">
+          <div class="card h-100 border-0 align-items-center">
             <img src="./img/posicao-ioga.jpg" class="card-img-top rounded-circle" alt="...">
             <div class="card-body">
-              <h5 class="card-title text-center">Ioga</h5>
+              <h4 class="card-title text-center">Ioga</h4>
               <p class="card-text text-center">É um conceito que se refere às tradicionais disciplinas físicas e mentais
                 originárias da Índia.</p>
-              <a href="#" class="text-center">Saiba Mais &raquo;</a>
+              <a href="#" class="fs-6 text-decoration-none text-dark">
+                <p class="text-center fw-bold">Saiba Mais &raquo;</p>
+              </a>
             </div>
           </div>
         </div>
@@ -132,19 +139,14 @@
 
     <!--CITAÇÂO-->
     <div class="bg-image">
-      <img src="./img/trilha.jpg" class="w-100" alt="" />
-      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-        <div class="d-flex justify-content-center align-items-center h-100">
-          <h3 class="text-white mb-0">"Uma hora antes da academia: cansaço e vontade de ficar em casa. Huma hora depois
-            da academia: aquele
-            sentimento maravilhoso de dever cumprido."</h3>
-        </div>
-      </div>
+      <div class="bg-citacao-trilha"></div>
+      <p class="citacao-trilha text-light fs-3">"Uma hora antes da academia: cansaço e vontade de ficar em casa. Uma hora depois
+        da academia: aquele sentimento maravilhoso de dever cumprido."</p>
     </div>
 
     <!--PLANOS-->
-    <div class="container">
-      <h3>Conheça nossos Planos</h3>
+    <div class="container pt-3 pb-3">
+      <h3 class="d-flex justify-content-center" >Conheça nossos Planos</h3>
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
         <div class="col">
           <div class="card mb-4 rounded-3 shadow-sm">
@@ -205,14 +207,14 @@
 
 
     <!--CITAÇÂO-->
-    <div class="container-fluid p-0">
-      <img class="w-100" src="./img/treino-praia.jpg" alt="">
-      <p>"Energia! Lembre-se dos seus objetivos e não desista: o esforço de hoje será recompensado."</p>
+    <div class="bg-image">
+      <div class="bg-citacao-praia"></div>
+      <p class="citacao-praia text-light fs-3">"Energia! Lembre-se dos seus objetivos e não desista: o esforço de hoje será recompensado."</p>
     </div>
 
     <!--FORM-->
-    <div class="container">
-      <h3>Quer saber mais? Entre em contato!</h3>
+    <div class="container pt-3 pb-5">
+      <h3 class="d-flex justify-content-center">Quer saber mais? Entre em contato!</h3>
       <div class="mb-3">
         <label class="form-label">Nome</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome Sobrenome">
@@ -233,12 +235,13 @@
           <p>Eu aceito receber notícias por e-mail com promoções</p>
         </label>
       </div>
+      <button type="button" class="btn btn-lg btn-primary">Enviar</button>
     </div>
   </main>
   <footer>
-    <div>
-      <p>Fitness © - Todos os direitos reservados</p>
-      <a href="">Voltar ao Início</a>
+    <div class="container d-flex justify-content-between pt-5">
+      <p class="d-inline-flex p-2 align-items-center text-decoration-none text-light">Fitness © - Todos os direitos reservados</p>
+      <a class="d-inline-flex p-2 align-items-center text-decoration-none text-light" href="#top">Voltar ao Início</a>
     </div>
   </footer>
 
