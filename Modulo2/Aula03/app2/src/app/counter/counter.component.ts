@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent {
 
-  titulo: string = 'contador'
+  valor: number = 0
+  increment() {
+    this.valor++
+  }
 
 }

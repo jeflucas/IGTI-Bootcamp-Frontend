@@ -1,1 +1,2 @@
-<p>counter works!</p>
+<p>Contador: {{ valor }}</p>
+<button [disabled]="valor >= 10" (click)="increment()">Adicionar 1</button>
