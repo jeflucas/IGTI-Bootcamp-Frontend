@@ -1,4 +1,5 @@
 import { Component, } from '@angular/core';
+import { TodoItem } from './todo-item'
 
 @Component({
   selector: 'app-todo-list',
@@ -7,9 +8,9 @@ import { Component, } from '@angular/core';
 })
 export class TodoListComponent {
 
-  tasks: string[]= [
-    'Atualizar LinkedIn',
-    'Tomar água',
-    'Ver planos Alura'
+  tasks: TodoItem[]= [
+    {description: 'Atualizar LinkedIn', done: true},
+    {description: 'Tarefas Bootcamp', done: false},
+    {description: 'Pesquisar preços Alura', done: false}
   ]
 }
