@@ -1,0 +1,7 @@
+.container {
+    border: solid 2px green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}

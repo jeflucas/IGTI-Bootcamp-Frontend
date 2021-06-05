@@ -1,0 +1,17 @@
+.container {
+
+    height: 250px;
+    width: 450px;
+    border: 2px solid lightcoral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid lightblue;
+}
