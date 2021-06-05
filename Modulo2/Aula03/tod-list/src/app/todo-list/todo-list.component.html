@@ -1,7 +1,12 @@
 <div class="container">
 
-    <p *ngFor="let task of tasks">
-        {{ task.description }}
-    </p>
+<table>
+    
+        <tr *ngFor="let task of tasks">
+
+            <td><input type="checkbox" [checked]="task.done"></td>
+            <td>{{ task.description }}</td>
+        </tr>
+</table>
 
 </div>
