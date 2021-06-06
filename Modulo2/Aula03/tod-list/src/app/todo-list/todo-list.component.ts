@@ -8,9 +8,23 @@ import { TodoItem } from './todo-item'
 })
 export class TodoListComponent {
 
-  tasks: TodoItem[]= [
-    {description: 'Atualizar LinkedIn', done: true},
-    {description: 'Tarefas Bootcamp', done: false},
-    {description: 'Pesquisar preços Alura', done: false}
+  tasks: TodoItem[] = [
+    { description: 'Atualizar LinkedIn', done: true },
+    { description: 'Tarefas Bootcamp', done: false },
+    { description: 'Pesquisar preços Alura', done: false }
   ]
+
+  addTask(description: string) {
+    if (description != ""){
+      this.tasks.push({
+        description: description,
+        done: false
+      })
+    }
+  }
+
+  deleteTask(i: number) {
+    this.tasks.splice(i,1);
+  }
+
 }

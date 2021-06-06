@@ -1,12 +1,21 @@
 <div class="container">
+    <div class="addTask">
+        <input #inputDescription type="text" placeholder="Tarefa...">
+        <button (click)="addTask(inputDescription.value)">Adicionar</button>
+    </div>
 
-<table>
-    
-        <tr *ngFor="let task of tasks">
-
+    <table>
+        <tr *ngFor="let task of tasks; let i = index">
             <td><input type="checkbox" [checked]="task.done"></td>
             <td>{{ task.description }}</td>
+            <td><button (click)="deleteTask(i)">Excluir</button></td>
         </tr>
-</table>
+    </table>
+
+    <div [ngSwitch]="tasks.length" class="">
+        <div *ngSwitchCase="0">Nenhuma tarefa</div>
+        <div *ngSwitchCase="1">Uma tarefa</div>
+        <div *ngSwitchDefault>{{ tasks.length}} tarefas</div>
+    </div>
 
 </div>
