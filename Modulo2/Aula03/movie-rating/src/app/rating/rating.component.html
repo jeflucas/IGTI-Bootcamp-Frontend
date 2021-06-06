@@ -1,1 +1,3 @@
-{{ rating }}
+<span *ngFor="let i of [1, 2, 3, 4, 5]"  class=" material-icons rating">
+     {{ rating >= i ? 'star' : 'star_outline' }}
+     </span>
