@@ -9,7 +9,7 @@ import { TodoItem } from './todo-item'
 export class TodoListComponent {
 
   tasks: TodoItem[] = [
-    { description: 'Atualizar LinkedIn', done: true },
+    { description: 'Atualizar LinkedIn', done: false },
     { description: 'Tarefas Bootcamp', done: false },
     { description: 'Pesquisar preços Alura', done: false }
   ]
