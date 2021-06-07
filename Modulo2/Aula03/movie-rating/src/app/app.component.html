@@ -9,6 +9,9 @@
   </tr>
   <tr *ngFor="let movie of movies">
     <td>{{ movie.title}}</td>
-    <td><app-rating [rating]="movie.rating"></app-rating></td>
+    <td><app-rating
+      [rating]="movie.rating"
+      (onRatingChange)="movie.rating = $event">
+    </app-rating></td>
   </tr>
 </table>
