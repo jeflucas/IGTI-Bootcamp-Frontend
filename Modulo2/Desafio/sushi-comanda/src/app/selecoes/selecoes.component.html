@@ -1,0 +1,20 @@
+<h2 class="titulo">
+    Quantidade de Peças
+</h2>
+
+<table>
+    <tr *ngFor="let barca of tamanhoBarca">
+        <td><input type='radio' name={{barca.pecas}}></td>
+        <td> {{ barca.pecas}} Peças</td>
+    </tr>
+</table>
+
+<h2 class="titulo">
+    Opções
+</h2>
+<table>
+    <tr *ngFor="let peca of pecasSushi">
+        <td>{{ peca.tipo }}</td>
+        <td> <input type="number" min="1"></td>
+    </tr>
+</table>
