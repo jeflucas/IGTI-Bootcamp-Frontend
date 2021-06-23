@@ -16,11 +16,15 @@
     <h1>{{ title }}</h1>
     <p>{{ subtitle }}</p>
     <img :src="logo" alt="">
-    <input type="number" name="" id="" placeholder="BRL Amount">
-    <input type="number" placeholder="USD Exchange Rate">
+    <input type="number" name="" id="input-BRL" v-model="BRL" placeholder="BRL Amount">
+    <input type="number" id="input-USD" v-model="USD" placeholder="USD Exchange Rate">
     <div class="btn">
-        <button type="reset">Reset</button>
-        <button type="submit" v-on:click="calcRate">Calculate</button>
+        <button type="reset" v-on:click="reset">Reset</button>
+        <button type="submit" @click="calcRate">Calculate</button>
+    </div>
+
+    <div class="msg">
+        <p> With {{ BRL }} BRL is possible to buy {{ total }} USD with {{ USD }} rate</p>
     </div>
 </div>
 </fieldset>

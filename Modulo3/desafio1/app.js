@@ -3,15 +3,19 @@ const app = Vue.createApp({
         return{
             title: 'BRL to USD',
             subtitle: 'A siple curency conversor',
-            logo: 'https://www.svgrepo.com/show/59997/dollar-sign.svg'
+            logo: 'https://www.svgrepo.com/show/59997/dollar-sign.svg',
+            BRL: '',
+            USD: '',
+            total: '',
         }
     },
     methods: {
         calcRate(){
-            console.log(this)
+            this.total = this.BRL / this.USD;
         },
         reset(){
-
+            this.BRL = 0;
+            this.USD = 0;
         }
     },
 })
