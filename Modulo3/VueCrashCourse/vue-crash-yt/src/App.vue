@@ -1,16 +1,46 @@
 <template>
-<div class="container">
-  <Header title="Task Tracker" />
-</div>
+  <div class="container">
+    <Header title="Task Tracker" />
+    <Tasks :tasks="tasks" />
+  </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header";
+import Tasks from "./components/Tasks";
 
 export default {
   name: "App",
   components: {
     Header,
+    Tasks
+  },
+  data() {
+    return {
+      tasks: [],
+    };
+  },
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: "Doctors Appointment",
+        day: "March 1st at 2:30pm",
+        reminder: true,
+      },
+      {
+        id: 2,
+        text: "Meet with Xerxes",
+        day: "June 22th at 4:40pm",
+        reminder: true,
+      },
+      {
+        id: 3,
+        text: "Food shopping",
+        day: "March 3rd at 11:00am",
+        reminder: false,
+      },
+    ];
   },
 };
 </script>
@@ -24,7 +54,7 @@ export default {
   padding: 0;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -35,32 +65,32 @@ body {
   border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
-  }
+}
 
-  .btn {
-    display: inline-block;
-    background: black;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: inherit;
-  }
+.btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
 
-  .btn:focus {
-    outline: none;
-  }
+.btn:focus {
+  outline: none;
+}
 
-  .btn:active {
-    transform: scale(0.98);
-  }
+.btn:active {
+  transform: scale(0.98);
+}
 
-  .btn-block {
-    display: block;
-    width: 100%;
-  }
+.btn-block {
+  display: block;
+  width: 100%;
+}
 </style>
