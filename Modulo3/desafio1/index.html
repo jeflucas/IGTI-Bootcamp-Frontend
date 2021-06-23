@@ -10,13 +10,20 @@
 </head>
 
 <body>
-    
+    <fieldset>
+        <legend>Curency Conversor</legend>
 <div id="app">
     <h1>{{ title }}</h1>
     <p>{{ subtitle }}</p>
     <img :src="logo" alt="">
+    <input type="number" name="" id="" placeholder="BRL Amount">
+    <input type="number" placeholder="USD Exchange Rate">
+    <div class="btn">
+        <button type="reset">Reset</button>
+        <button type="submit" v-on:click="calcRate">Calculate</button>
+    </div>
 </div>
-
+</fieldset>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>
 </body>

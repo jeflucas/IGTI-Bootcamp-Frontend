@@ -6,7 +6,14 @@ const app = Vue.createApp({
             logo: 'https://www.svgrepo.com/show/59997/dollar-sign.svg'
         }
     },
+    methods: {
+        calcRate(){
+            console.log(this)
+        },
+        reset(){
 
+        }
+    },
 })
 
 app.mount('#app')
