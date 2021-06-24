@@ -13,7 +13,7 @@ export default {
   },
   methods: {
       onClick() {
-         console.log('click beleza')
+         this.$emit('toggle-add-task')
       }
   },
 };

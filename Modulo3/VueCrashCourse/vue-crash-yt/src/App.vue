@@ -1,10 +1,18 @@
 <template>
   <div class="container">
-    <Header title="Task Tracker" />
-    <div>
-    <AddTask @add-task="addTask" />
+    <Header
+      @toggle-add-task="toggleAddTask"
+      title="Task Tracker"
+      :showAddTask="showAddTask"
+    />
+    <div v-show="showAddTask">
+      <AddTask @add-task="addTask" />
     </div>
-    <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
+    <Tasks
+      @toggle-reminder="toggleReminder"
+      @delete-task="deleteTask"
+      :tasks="tasks"
+    />
   </div>
 </template>
 
@@ -18,28 +26,33 @@ export default {
   components: {
     Header,
     Tasks,
-    AddTask
+    AddTask,
   },
   data() {
     return {
       tasks: [],
-      showAddTask: false
+      showAddTask: false,
     };
   },
   methods: {
+    toggleAddTask() {
+      this.showAddTask = !this.showAddTask;
+    },
 
-    addTask(task){
-      this.tasks = [...this.tasks, task]
+    addTask(task) {
+      this.tasks = [...this.tasks, task];
     },
 
     deleteTask(id) {
-      if(confirm('Are you sure?')){
-        this.tasks = this.tasks.filter((task) => task.id !== id)
+      if (confirm("Are you sure?")) {
+        this.tasks = this.tasks.filter((task) => task.id !== id);
       }
     },
     toggleReminder(id) {
-      this.tasks = this.tasks.map((task) => task.id === id ? {...task, reminder: !task.reminder} : task)
-    }
+      this.tasks = this.tasks.map((task) =>
+        task.id === id ? { ...task, reminder: !task.reminder } : task
+      );
+    },
   },
   created() {
     this.tasks = [
