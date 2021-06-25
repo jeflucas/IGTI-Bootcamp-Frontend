@@ -61,7 +61,8 @@ export default {
       return data
     }
   },
-  async created() {
+  async created() 
+  {
     this.tasks = await this.fetchTasks();
   },
 };
